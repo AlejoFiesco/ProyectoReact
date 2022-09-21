@@ -1,0 +1,34 @@
+.task{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+    border: var(--global-border);
+    border-radius: var(--global-radius);
+    padding: 15px;
+    font-size: large;
+}
+
+.task > .taskHeader {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: var(--global-border);
+}
+
+.task > .taskHeader > button{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.task > .taskHeader > button:hover{
+    font-size: larger;
+}
+
+.task > p{
+    padding: 0px 10px 10px;
+}
+

@@ -1,0 +1,83 @@
+.tasks{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.estado{
+    display: flex;
+    width: fit-content;
+    gap: 15px;
+    padding: 0 5px;
+    border-radius: var(--global-radius);
+    height: 30px;
+    font-weight: bold;
+}
+
+.estado i{
+    color: black;
+}
+
+.estado:not(.incomplete) i{
+    color: white;
+}
+
+.estado > i{
+    line-height: 30px;
+}
+
+.estado:hover > i{
+    animation: rotate .5s infinite linear;
+}
+
+.estado > .icono{
+    width: 30px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 0 var(--global-radius) var(--global-radius) 0;
+}
+
+.estado > .icono > i{
+    margin: 0 auto;
+}
+
+.swap{
+    cursor: pointer;
+}
+
+.estado > span{
+    display: block;
+    width: fit-content;
+    padding: 3px;
+    border-radius: var(--global-radius) 0 0 var(--global-radius);
+    z-index: 10;
+    user-select: none;
+}
+
+.active{
+    background-color: var(--global-success-color);
+    color: white;
+}
+
+.incomplete{
+    color: black;
+    background-color: var(--global-warning-color);
+}
+
+.finished{
+    background-color: var(--global-alert-color);
+    color: white;
+}
+
+@keyframes rotate {
+    from{
+        rotate: 0deg;
+    }
+
+    50%{
+        rotate: 45deg;
+    }
+}

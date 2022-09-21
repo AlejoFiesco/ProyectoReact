@@ -1,0 +1,88 @@
+.taskForm{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+    border: var(--global-border);
+    border-radius: var(--global-radius);
+    padding: 30px 15px;
+    font-size: large;
+    font-family: inherit;
+    gap: 15px;
+}
+
+.taskForm > .taskHeader {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: var(--global-border);
+    height: 30px;
+    padding: 15px 5px;
+}
+
+.taskForm > .taskHeader > input, .taskForm textarea{
+    width: 100%;
+    margin: 0 auto;
+    border: none;
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+.taskForm > .taskHeader > input{
+    font-size: x-large;
+    font-weight: bold;
+    outline: none;
+}
+
+.taskForm textarea{
+    padding: 0px 10px 10px;
+    height: 150px;
+    font-size: large;
+    resize: none;
+}
+
+.taskForm button[type="submit"]{
+    border: none;
+    border-radius: var(--global-radius);
+    height: 30px;
+    font-weight: bold;
+    font-family: inherit;
+    font-size: large;
+    background-color: var(--global-primary-color);
+    color: white;
+    cursor: pointer;
+    transition: .2s linear;
+}
+
+.taskForm button[type="submit"]:hover {
+    filter: brightness(1.2);
+}
+.taskForm > .estados{
+    display: flex;
+    width: fit-content;
+    gap: 15px;
+    padding: 0 5px;
+    border-radius: var(--global-radius);
+    height: 30px;
+    font-weight: bold;
+}
+
+.taskForm > .estados > input[type="radio"] {
+    display: none;
+}
+
+
+.taskForm > .estados > .estado{
+    padding: 2px 5px;
+    border-radius: var(--global-radius);
+    cursor: pointer;
+}
+
+.taskForm .taskDescription{
+    position: relative;
+}
+
+.taskForm > .taskDescription span{
+    position: absolute;
+    bottom: 15px;
+    right: 10px;
+}

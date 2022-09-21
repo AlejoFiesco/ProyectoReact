@@ -1,0 +1,21 @@
+header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+header>img{
+    width: 80px;
+}
+
+header>div{
+    cursor: pointer;
+}
+
+@media screen and (min-width:768px) {
+    header>img{
+        width: 110px;
+    }
+}
